@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <style>
+    body {
+      font-family: inherit;
+      margin: 10px;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-size: cover; 
+  background-position: center;
+  background-size: cover; 
+  background-position: center;
+    }
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(1, 1, 1, 0.1);
+      width: 300px;
+      border-radius: 22px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid white;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #0056b3;
+      color: #fff;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+    .social-icons {
+      margin-top: 21px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .social-icons a {
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+    .forgot-password {
+      margin-top: 10px;
+      text-align: right;
+    }
+    .forgot-password a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .forgot-password a:hover {
+      text-decoration: underline;
+    }
+    .register-link {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .register-link a {
+      color: #2771c0;
+      text-decoration: none;
+    }
+    .register-link a:hover {
+      text-decoration: underline;
+    }
+    form {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(1, 1, 1, 0.1);
+  width: 300px;
+  border-radius: 22px;
+}
+input[type="text"],
+    input[type="password"]{
+      opacity: 0.6;
+    }
+
+  </style>
+</head>
+<body background="atv.jpg">
+  <form action="" method="post">
+   <center> <h2 style="color: white;" >Fill up the details</h2></center>
+    <input type="text" name="firstname" placeholder="First name" required>
+    <input type="text" name="lastname" placeholder="Last name" required>
+    <input type="text" name="email" placeholder="Email" required>
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="password" name="confirmppassword" placeholder="Confirm password" required>
+    <input type="checkbox" name="termcondition" placeholder="Accetp all terms & condition" required>
+    <label for="termcondition" style="color: white;">Accetp all terms & condition</label>
+      
+    <input type="submit" value="Sign up">
+   
+    </div>
+    
+  </form>
+</body>
+</html>

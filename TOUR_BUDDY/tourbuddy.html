@@ -1,0 +1,349 @@
+<html>
+
+<html lang="en">
+
+<head>
+
+
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Tour buddy</title>
+
+
+    <style>
+        body {
+    background-image: url('tour if.mp4');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    margin: 0; 
+}
+
+        
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .card {
+            flex: 1;
+            max-width: 30%;
+            margin: 10px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px 10px 0 0;
+            max-width: 100%;
+            max-height: 150px;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            border-radius: 10px;
+        }
+        .social-icons {
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <a class="navbar-brand" href="Sign in.html">
+            <img src="tour pic.jpg" alt="Logo" width="30" height="30" class="rounded-circle d-inline-block align-top mr-2" loading="lazy">   Tour buddy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="tourbuddy.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact us.html">Contact us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://source.unsplash.com/1400x400/?tourist,places" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to Tour buddy</h5>
+                    <p>Let us guide you on your journey of discovery and adventure.</p>
+                    <button class="btn btn-danger">Mountains</button>
+                    <button class="btn btn-primary">Beaches</button>
+                    <button class="btn btn-success">Deserts</button>
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1400x400/?tourist,guiders" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to Tour buddy</h5>
+                    <p>Let us guide you on your journey of discovery and adventure.</p>
+                    <button class="btn btn-danger">Mountains</button>
+                    <button class="btn btn-primary">Beaches</button>
+                    <button class="btn btn-success">Deserts</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1400x400/?tourist,villages" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to Tour buddy</h5>
+                    <p>Let us guide you on your journey of discovery and adventure.</p>
+                    <button class="btn btn-danger">Mountains</button>
+                    <button class="btn btn-primary">Beaches</button>
+                    <button class="btn btn-success">Deserts</button>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="container my-4">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Mountains</strong>
+                        <h3 class="mb-0">Description</h3>
+                        <div class="mb-1 text-muted">last month</div>
+                        <p class="card-text mb-auto">Tourist places, or tourist attractions, are places of interest that
+                            tourists visit for their natural or cultural value, historical significance, natural or
+                            built beauty, or for leisure, adventure, and amusemen</p>
+                        <a href="https://en.wikipedia.org/wiki/List_of_mountains_in_India" class="stretched-link">List
+                            of mountains in India</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="kalash mountain.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Religious places</strong>
+                        <h3 class="mb-0">Thoughts</h3>
+                        <div class="mb-1 text-muted">last month</div>
+                        <p class="mb-auto">When one is surrounded by such a good environment of religious places, one's
+                            thoughts mature as he rises higher in his spiritual development and binds even more merit
+                            karmas that yield even better results.</p>
+                        <a href="https://en.wikipedia.org/wiki/Hindu_pilgrimage_sites_in_India#:~:text=In%20order%20of%20importance%2C%20in,Saligram%20Muktinath%2C%20Srimushnam%2C%20Tiruchirappalli%2C"
+                            class="stretched-link">List of Important Pilgrimage Places</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="temple.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Deserts</strong>
+                        <h3 class="mb-0">spots</h3>
+                        <div class="mb-1 text-muted">last month</div>
+                        <p class="card-text mb-auto">desert, any large, extremely dry area of land with sparse
+                            vegetation. It is one of Earth's major types of ecosystems, supporting a community of
+                            distinctive plants and animals specially adapted to the harsh environment.</p>
+                        <a href="https://en.wikipedia.org/wiki/Thar_Desert" class="stretched-link">More about desert</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="desets_in_india.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Beaches</strong>
+                        <h3 class="mb-0">Thoughts</h3>
+                        <div class="mb-1 text-muted">last month</div>
+                        <p class="mb-auto">Beach Tourism is popular worldwide and attracts millions of tourists each
+                            year. It encompasses various activities such as swimming, sunbathing, beachcombing, surfing,
+                            snorkeling, scuba diving, sailing, fishing, beach volleyball, and other water sports.</p>
+                        <a href="https://en.wikipedia.org/wiki/List_of_beaches_in_India" class="stretched-link">List of
+                            beaches in India</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="beaches_in_india.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <center>
+        <h5 style="color: lightseagreen;">FEATURED TOURS</h5>
+    </center>
+    <center>
+        <h1>Most Popular Tours</h1>
+    </center>
+    <div class="container mt-4">
+
+        <div class="row">
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="vrindavan.jpg" alt="Placeholder Image">
+                    <div class="card-content">
+                        <h2>Vrindavan</h2>
+                        <p>Vrindavan is a city in the state of Uttar Pradesh, India. It's located on the west bank of
+                            the Yamuna River, about 15 kilometers north of Mathura.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="shimla.jpg" alt="Placeholder Image">
+                    <div class="card-content">
+                        <h2>Shimla</h2>
+                        <p>Shimla is the capital of Himachal Pradesh, a state in northwest India. It is located on a
+                            ridge of the Himalayan foothills, at an elevation of about 7,100 feet (2,200 meters)
+                            northeast of Chandigarh
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="rajasthan.jpg" alt="Placeholder Image">
+                    <div class="card-content">
+                        <h2>Rajasthan</h2>
+                        <p>Rajasthan is a state in northern India and the largest state in the country by area. It's
+                            also known as the "Land of Kings" or "Land of Kingdoms".</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="alexey-turenkov-bWJiSZjIgTM-unsplash.jpg" alt="Placeholder Image">
+                    <div class="card-content">
+                        <h2>Goa</h2>
+                        <p>Goa is a state in southwestern India, known as the "Pearl of the Orient". It's India's
+                            smallest state, with a total area of 1,430 square miles.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="akshay-syal-5vDTocCCutE-unsplash.jpg" alt="Placeholder Image">
+                    <div class="">
+                        <h2>Uttarakhand</h2>
+                        <p>Uttarakhand is a state in northern India. It was formed in 2000 from the northern part of
+                            Uttar Pradesh. The state's name comes from the Sanskrit words uttara (north) and khaṇḍa
+                            (land)</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="dal-3396109_1280.jpg" alt="Placeholder Image">
+                    <div class="card-content">
+                        <h2>Kashmir</h2>
+                        <p>Kashmir is a region in the northwestern part of the Indian subcontinent. It is bordered by
+                            China to the northeast and east, India to the south, Pakistan to the west, and Afghanistan
+                            to the northwest.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <div class="social-icons">
+            <a href="https://www.google.com"><img src="google logo.webp" alt="Google" height="30"></a>
+            <a href="https://www.facebook.com"><img src="facebook logo.webp" alt="Facebook" height="30"></a>
+            <a href="https://www.twitter.com"><img src="x logo.jpg" alt="Twitter" height="30"></a>        
+                            
+            <a href="https://www.instagram.com"><img src="instagram logo.jpg" alt="Instagram" height="30"></a>
+          </div>
+
+        <center>
+            <p class="mt-5 mb-3 text-body-secondary">© SSSS</p>
+        </center>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849b1E2
+
++poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV@wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj003uMBJnjuUD4Ih7YwaYdliqfktj0Uod8GCEx130g8ifwB6"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>

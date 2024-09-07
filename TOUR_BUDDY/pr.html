@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snake and Ladder</title>
+<style>
+  #board {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+  }
+  .cell {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+</head>
+<body>
+
+<div id="board"></div>
+
+<script>
+  // Define snakes and ladders
+  const snakesAndLadders = {
+    16: 6,
+    47: 26,
+    49: 11,
+    56: 53,
+    62: 19,
+    64: 60,
+    87: 24,
+    93: 73,
+    95: 75,
+    98: 78
+  };
+
+  // Create board
+  const boardSize = 100;
+  const board = document.getElementById('board');
+  for (let i = boardSize; i >= 1; i--) {
+    const cell = document.createElement('div');
+    cell.classList.add('cell');
+    cell.innerText = i;
+    board.appendChild(cell);
+  }
+
+  // Initialize player position
+  let playerPosition = 1;
+
+  // Function to roll the dice
+  function rollDice() {
+    return Math.floor(Math.random() * 6) + 1;
+  }
+
+  // Function to move the player
+  function movePlayer(steps) {
+    playerPosition += steps;
+    if (snakesAndLadders[playerPosition]) {
+      playerPosition = snakesAndLadders[playerPosition];
+    }
+    renderPlayer();
+  }
+
+  // Function to render player
+  function renderPlayer() {
+    const cells = document.querySelectorAll('.cell');
+    cells.forEach((cell, index) => {
+      if (index + 1 === playerPosition) {
+        const player = document.createElement('div');
+        player.innerText = 'P';
+        cell.appendChild(player);
+      }
+    });
+  }
+
+  // Function to clear player from board
+  function clearPlayer() {
+    const cells = document.querySelectorAll('.cell');
+    cells.forEach(cell => {
+      cell.innerHTML = '';
+    });
+  }
+
+  // Function to play the game
+  function playGame() {
+    const steps = rollDice();
+    movePlayer(steps);
+    if (playerPosition === boardSize) {
+      alert('Congratulations! You won the game!');
+      clearPlayer();
+      playerPosition = 1; // Reset player position
+      renderPlayer();
+    }
+  }
+
+  // Initialize game
+  renderPlayer();
+
+  // Event listener for play button
+  document.addEventListener('DOMContentLoaded', function() {
+    const playButton = document.createElement('button');
+    playButton.innerText = 'Roll Dice';
+    playButton.addEventListener('click', playGame);
+    document.body.appendChild(playButton);
+  });
+</script>
+
+</body>
+</html>

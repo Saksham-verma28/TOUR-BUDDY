@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Tour Buddy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-image: url('about us.avif');
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .cta-button:hover {
+            color: rgb(63, 63, 143);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .team-img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .team-member {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .story-section,
+        .mission-section,
+        .team-section,
+        .cta-section {
+            max-width: 1200px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.8);
+        
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .transparent {
+            opacity: 0.9;
+        
+        }
+
+        @media screen and (max-width: 768px) {
+            .header-background {
+                padding: 60px 20px;
+            }
+
+            .story-content,
+            .team-grid {
+                flex-direction: column;
+            }
+
+            .team-member {
+                flex-basis: 100%;
+            }
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <img src="tour pic.jpg" alt="Logo" width="30" height="30" class="rounded-circle d-inline-block align-top mr-2"
+            loading="lazy">
+        <a class="navbar-brand">Tour buddy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="tourbuddy.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact us.html">Contact us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <header class="header-background">
+        <h1 class="transparent">Your Adventure Awaits</h1>
+    </header>
+    <section class="story-section">
+        <h2 class="transparent">Our Story</h2>
+        <div class="story-content">
+            <img src="" alt="Inspiring Travel" class="responsive-img">
+            <p class="transparent">
+                Born from a love of undiscovered vistas and the stories of the people we meet, Tour Buddy began as a
+                dream shared between friends under a starlit sky in [Exotic Location]. Today, that dream has transported
+                us from the deserts of [Location] to the bustling streets of [City], bringing adventurers like you along
+                for the journey.
+            </p>
+        </div>
+    </section>
+    <section class="mission-section">
+        <h2 class="transparent">Our Mission</h2>
+        <p class="transparent">
+            To forge unforgettable connections between people and places. With Tour Buddy, you're not just a traveler;
+            you're an explorer, a storyteller, a part of a community that cherishes the beauty of discovery.
+        </p>
+    </section>
+    <section class="team-section">
+        <h2 class="transparent">Meet the Team</h2>
+        <div class="team-grid">
+
+            <div class="team-member">
+                <img src="" alt="Name" class="team-img">
+                <h3 class="transparent">Saarthak Gosain</h3>
+                <p class="transparent">Role - A brief about the team member. Maybe a fun fact or why they love being
+                    part of Tour Buddy.</p>
+            </div>
+            <div class="team-member">
+                <img src="saksham pic-photoaidcom-cropped.jpg" alt="Name" class="team-img">
+                <h3 class="transparent">Saksham verma</h3>
+                <p class="transparent">Role - A brief about the team member. Maybe a fun fact or why they love being
+                    part of Tour Buddy.</p>
+            </div>
+            <div class="team-member">
+                <img src="siddhart-photoaidcom-cropped.jpg" alt="Name" class="team-img">
+                <h3 class="transparent">Siddharth Jaiswal</h3>
+                <p class="transparent">Role - A brief about the team member. Maybe a fun fact or why they love being
+                    part of Tour Buddy.</p>
+            </div>
+            <div class="team-member">
+                <img src="saurabh-photoaidcom-cropped.jpg" alt="Name" class="team-img">
+                <h3 class="transparent">Saurabh Gupta</h3>
+                <p class="transparent">Role - A brief about the team member. Maybe a fun fact or why they love being
+                    part of Tour Buddy.</p>
+            </div>
+        </div>
+    </section>
+    <section class="cta-section">
+        <h2 class="transparent">Start Your Journey With Us</h2>
+        <p class="transparent">Ready to discover the world like never before? Get in touch and let's plan your next
+            adventure together.</p>
+        <a href="contact us.html" class="cta-button">Contact Us</a>
+    </section>
+    <footer>
+        <center><p class="transparent">© 2024 Tour Buddy. All rights reserved.</p></center>
+    </footer>
+</body>
+
+</html>
